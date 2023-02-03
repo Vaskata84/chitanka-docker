@@ -81,8 +81,8 @@ services:
     depends_on:
       - app
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx_chitanka_conf.template:/etc/nginx/templates/default.conf.template
+      - ../nginx.conf:/etc/nginx/nginx.conf
+      - ../nginx_chitanka_conf.template:/etc/nginx/templates/default.conf.template
     volumes_from:
       - app
 
